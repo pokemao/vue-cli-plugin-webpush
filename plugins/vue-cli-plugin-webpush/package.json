@@ -1,12 +1,47 @@
 {
   "name": "vue-cli-plugin-webpush",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0-source5.0.8",
+  "keywords": [
+    "vue cli plugin"
+  ],
+  "description": "vue cli plugin for webpush",
+  "author": {
+    "name": "shaoyuzhe"
+  },
+  "contributors": [],
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    }
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ],
+  "type": "commonjs",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@vue/cli-shared-utils": "^5.0.8",
+    "html-webpack-plugin": "^5.1.0",
+    "syz-workbox-webpack-plugin": "workspace:^",
+    "webpack": "^5.54.0",
+    "workbox-webpack-plugin": "^6.1.0"
+  },
+  "devDependencies": {
+    "register-service-worker": "^1.7.2"
+  },
+  "peerDependencies": {
+    "@vue/cli-service": "^3.0.0 || ^4.0.0 || ^5.0.0-0"
+  }
 }
