@@ -2,7 +2,9 @@
   "name": "vue-cli-plugin-webpush",
   "version": "1.0.0-source5.0.8",
   "keywords": [
-    "vue cli plugin"
+    "vue",
+    "cli",
+    "plugin"
   ],
   "description": "vue cli plugin for webpush",
   "author": {

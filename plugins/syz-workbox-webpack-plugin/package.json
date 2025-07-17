@@ -1,13 +1,38 @@
 {
   "name": "syz-workbox-webpack-plugin",
   "version": "1.0.0",
-  "description": "",
+  "keywords": [
+    "workbox",
+    "webpack", 
+    "plugin"
+  ],
+  "description": "my workbox-webpack-plugin",
+  "author": {
+    "name": "shaoyuzhe"
+  },
+  "contributors": [],
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    }
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src"
+  ],
+  "type": "commonjs",
+  "sideEffects": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "webpack": "^5.54.0"
   }
