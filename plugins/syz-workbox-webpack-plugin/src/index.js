@@ -14,7 +14,7 @@ class SyzModifySWPlugin {
   apply(compiler) {
     const { Compilation } = compiler.webpack;
 
-    compiler.hooks.compilation.tap("SyzModifySWPlugin", (compilation) => {
+    compiler.hooks.thisCompilation.tap("SyzModifySWPlugin", (compilation) => {
       compilation.hooks.processAssets.tap(
         {
           name: "SyzModifySWPlugin",
